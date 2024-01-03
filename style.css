@@ -63,7 +63,7 @@ nav{
     width: 30px;
     height: 2px;
     margin: 6px 0;
-    background:  #fefefe;
+    background:  #2963FA;
    
 }
 @media only screen and (max-width: 768px){
@@ -96,7 +96,7 @@ nav{
         left: 0;
         width: 100%;
         padding: 30px;
-        transition: 0.3s;
+        transition: 0.3s slide-down;
         opacity: 0;
     }
 
@@ -106,6 +106,26 @@ nav{
         background-color:rgb(208, 208, 208);
         
     }
+    
+    @keyframes slide-down{
+        0%{
+            top: -250%;
+            opacity: 0;
+        }
+        50%{
+            top: 0;
+            opacity: 0.1;
+        }
+        75%{
+            top: 20px;
+            opacity: 0.5;
+        }
+        100%{
+            top: 70px;
+            opacity: 1;
+        }
+    }
+
     .nav-links li a{
         display: block;
         text-align: center;
